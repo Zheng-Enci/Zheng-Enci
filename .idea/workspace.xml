@@ -30,7 +30,8 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/zheng/Desktop/BaiduSyncdisk/ZhengEnCi/Note/Resume",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "F:/BaiduSyncdisk/ZhengEnCi/Note/Resume",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,15 +43,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\BaiduSyncdisk\ZhengEnCi\Note\Resume" />
       <recent name="E:\BaiduSyncdisk\ZhengEnCi\Note\Resume" />
     </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-python-sdk-4e2b1448bda8-9a97661f3031-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.27397.106" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -70,6 +65,7 @@
       <workItem from="1760922918500" duration="406000" />
       <workItem from="1760942364991" duration="68000" />
       <workItem from="1763612883251" duration="1261000" />
+      <workItem from="1773975426029" duration="7403000" />
     </task>
     <servers />
   </component>
