@@ -178,6 +178,21 @@
 
 ---
 
+### mdconvert Python Library | 2026.03
+
+**Project Background**: Developed a lightweight Python library to address Markdown document format conversion needs, supporting conversion to HTML, PDF, DOCX and other formats, providing simple and easy-to-use API interface.
+
+**Tech Stack**: Python + Markdown Parsing + HTML/PDF/DOCX Generation
+
+**Project Achievements**:
+- **Independent Python Library Development**: Implemented complete Markdown to HTML/PDF/DOCX conversion process, supporting custom CSS styles
+- **Open Source Contribution**: Published to PyPI platform (package name: mdconvert), providing complete documentation and example code
+- **Technical Documentation Writing**: Wrote detailed usage tutorials covering installation, API usage, custom styles and other complete processes
+- **Practical Tool Value**: Simplified document conversion process, supporting batch processing and style customization, improving document processing efficiency
+- **Open Source Code**: GitHub/Gitee/GitCode
+
+---
+
 ## Awards & Honors
 
 ### Certifications

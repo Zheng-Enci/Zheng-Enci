@@ -178,6 +178,21 @@
 
 ---
 
+### mdconvert Python库 | 2026.03
+
+**项目背景**：为解决Markdown文档格式转换需求，开发轻量级Python库，支持HTML、PDF、DOCX等多种格式转换，提供简单易用的API接口。
+
+**技术栈**：Python + Markdown解析 + HTML/PDF/DOCX生成
+
+**项目成果**：
+- **独立开发Python库**：实现Markdown到HTML/PDF/DOCX的完整转换流程，支持自定义CSS样式
+- **开源贡献**：发布到PyPI平台（包名：mdconvert），提供完整文档和示例代码
+- **技术文档撰写**：撰写详细使用教程，涵盖安装、API使用、自定义样式等完整流程
+- **实用工具价值**：简化文档转换流程，支持批量处理和样式定制，提升文档处理效率
+- **开源代码**：GitHub/Gitee/GitCode
+
+---
+
 ## 获奖与荣誉
 
 ### 认证证书
