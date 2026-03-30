@@ -191,6 +191,22 @@
 - **Practical Tool Value**: Simplified document conversion process, supporting batch processing and style customization, improving document processing efficiency
 - **Open Source Code**: GitHub/Gitee/GitCode
 
+---
+
+### Mouse and Keyboard Simulation Project | 2026.03
+
+**Project Background**: Developed mouse and keyboard simulation project based on USB Gadget HID protocol, suitable for RK3588 and other Linux development boards, providing RESTful API for mouse movement and keyboard input, solving remote device control needs.
+
+**Tech Stack**: FastAPI + Python + USB Gadget HID + Linux Kernel Configuration
+
+**Project Achievements**:
+- **USB HID Configuration Documentation**: Wrote complete USB HID device configuration documentation, covering kernel check, OTG mode switching, device binding, etc.
+- **Mouse API Development**: Implemented FastAPI-based mouse control API, supporting x, y coordinate control
+- **Code Quality Optimization**: Refactored code structure, added type annotations, created unified response class
+- **Open Source Contribution**: Provided complete configuration documentation and API services
+- **Open Source Code**: GitHub/Gitee/GitCode
+
+---
 
 ## Awards & Honors
 
