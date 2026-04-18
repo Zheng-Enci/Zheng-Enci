@@ -1,259 +1,45 @@
-# 郑恩赐 - 个人简历
-
-**AI全栈应用开发**
-
-[![snake animation](https://raw.githubusercontent.com/Zheng-Enci/Zheng-Enci/output/github-contribution-grid-snake.svg)](https://github.com/Zheng-Enci/Zheng-Enci)
-
----
-
-## 联系方式
-
-- **邮箱**：zheng_enci@qq.com
-- **GitHub**：https://github.com/Zheng-Enci
-- **Gitee**：https://gitee.com/zheng-enci050704
-- **GitCode**：https://gitcode.com/ZhengEnCi
-- **掘金**：https://juejin.cn/user/2883382090934252
-- **CSDN**：https://blog.csdn.net/2301_79239314
-
----
-
-## 教育背景
-
-**2023.09 - 2027.06（预计）** | **厦门工学院 人工智能学院** | 本科
-
-- **专业**：软件工程（AI方向）
-- **研究方向**：AI全栈应用开发、智能视觉技术研发、深度学习模型设计与优化、多模态大模型应用集成
-
----
-
-## 核心技能
-
-### 编程语言
-- **Python**：PyTorch、OpenCV、Flask
-- **Java**：Spring Boot、Spring Security
-- **JavaScript/TypeScript**：Vue3、Node.js
-
-### 前端技术
-- **框架**：Vue3 (Composition API)、Element Plus
-- **可视化**：ECharts、Fabric.js、Canvas API
-
-### 后端技术
-- **框架**：Spring Boot 3.x、Spring Security、Flask、Spring WebFlux
-- **API设计**：RESTful API、JWT认证、WebSocket
-
-### AI/机器学习
-- **计算机视觉**：YOLO、ResNet、目标检测、行为识别、图像拼接
-- **大语言模型**：多模态大模型应用、通义千问、紫东太初
-
-### 数据库与运维
-- **数据库**：MySQL、PostgreSQL、Redis、SQL优化、MinIO文件存储
-- **部署运维**：Docker、Nginx、Git、Linux/Ubuntu、内网穿透、Spring Scheduler
-
----
-
-## 实习经历
-
-### 厦门弘尘网络科技有限公司 | 前后端开发工程师 | 2024.08
-
-- **快速搭建**人力资源管理信息系统基础框架，涵盖员工管理、考勤打卡、部门管理等核心模块，实现管理员与员工双角色权限体系
-- **设计并实现**JWT Token认证机制，保障系统安全性；采用Vue3 + Element Plus + Spring Boot + MyBatis + MySQL技术栈，完成系统基础功能开发
-- **快速掌握**Spring Boot、MyBatis、Vue3等企业级技术栈，通过实践项目深入理解前后端分离架构与RESTful API设计规范
-
----
-
-## 项目经验
-
-### 学生管理系统 | 2025.09 - 2026.04
-
-**项目背景**：为厦门工学院人工智能创作坊开发一体化学生管理系统，解决学生信息管理不规范、签到缺乏时段限制、数据无可视化展示等问题。
-
-**技术栈**：Vue3 + Spring Boot 3.x + MySQL + Redis + Nginx
-
-**项目成果**：
-- **独立完成全栈开发**：负责前后端架构设计与实现，涵盖学生信息管理、分时段签到、数据可视化等**7个核心模块**
-- **安全机制设计**：实现JWT认证 + IP白名单 + 验证码校验三重安全机制，**有效防止刷签到现象**
-- **性能优化**：通过Redis缓存签到状态，**响应时间优化至100ms内**；组件库按需加载，**显著减少打包体积**
-- **用户体验优化**：重构补卡流程为分步骤设计，支持日期选择器中文化、大屏适配、暗色模式
-- **系统部署**：成功上线部署，支持多用户并发访问，**稳定运行于生产环境**
-- **2026年3月功能扩展**：新增邀请码管理系统、数据下载功能、验证码系统重构，**系统安全性进一步提升**
-- **2026年4月功能扩展**：新增考勤分析页面、签到趋势图优化（滚动平均线、趋势线、图例说明、Tooltip提示）、暗黑模式适配、移动端优化
-- **项目链接**：https://10257qh6684dd.vicp.fun/ | **开源代码**：GitHub/Gitee/GitCode（前端开源）
-
----
-
-### 红星农场玉米出芽监测系统（农科院项目）| 2025.10 - 2025.11
-
-**项目背景**：承接农科院委托，为北大荒集团北安分公司开发玉米出芽监测系统，解决人工巡田难以及时发现缺苗带的问题。
-
-**技术栈**：HTML5/CSS3 + Fabric.js + JavaScript + YOLO数据解析
-
-**项目成果**：
-- 独立完成Canvas渲染、检测数据解析、交互逻辑与UX优化，解析YOLO标注文件，按网格聚合苗点并生成热力视图
-- 实现网格大小/旋转/平移多参数调节，适配不规则田垄，**行距误差控制在5像素内**
-- 开发人工校正功能，形成"算法检测+人工复核"闭环，集成出芽率计算面板，辅助农场主精准决策
-- **无人机采集→图像拼接→检测→网格热力→人工复核链路压缩至10分钟内，提升巡田效率**
-- **开源代码**：GitHub/Gitee/GitCode
-
----
-
-### 课堂异常行为检测系统（EduBot）| 2025.03 - 2025.04
-
-**项目背景**：学校AI教改项目，解决课堂中趴桌、使用手机、站立、抬头等行为难以实时检测的问题。
-
-**技术栈**：PyTorch + YOLOv8n + Flask + MySQL + 通义千问/紫东太初
-
-**项目成果**：
-- 使用LabelImg构建**厦门工学院教室人员检测数据集**（YOLO格式），对比多版YOLO模型，选定YOLOv8n训练专用模型
-- 使用PyTorch开发自研行为二分类模型，创新实现"YOLO找人+自研模型判行为"检测逻辑，**模型精度显著优于泛用模型**，准确识别4类目标行为
-- 独立完成前端、后端、模型管理三部分全栈开发，接入大语言模型实现PPTX转思维导图、教案生成等功能
-- 项目获得**国家级大创立项**（项目编号：202513115006）
-- 申请**发明专利**（第三发明人）：基于多模态大模型的课堂行为检测方法（CN202510645941.9）
-- **开源代码**：GitHub/Gitee/GitCode（前后端开源）
-
----
-
-### 中科院城市环境高空摄像头多路图像拼接系统 | 2025.06 - 2025.07
-
-**项目背景**：承接中科院城市环境研究所委托，针对高空摄像头多路视频流融合需求，开发基于深度学习的图像拼接系统，解决传统图像拼接方法在复杂场景下的精度不足问题，实现多路摄像头视频流的高质量无缝拼接。
-
-**技术栈**：PyTorch + ResNet50 + OpenCV + CUDA GPU加速
-
-**项目成果**：
-- 基于GitHub开源项目进行二次开发，**抽取主干代码并优化架构**，重构图像拼接逻辑
-- 设计**多图像拼接算法**，将原项目仅支持2张图片拼接扩展为支持4-5张图片拼接
-- 优化**双分支回归网络**，分别预测单应性变换参数和TPS网格变形参数，实现两种变换的联合优化
-- 实现完整的端到端图像拼接流程（预处理→特征提取→变换预测→图像变换→图像融合→后处理），**相比传统方法拼接精度显著提升**，为城市环境监测提供技术支撑
-
----
-
-### 三维重建全流程文件智慧管理系统 | 2025.09 - 2025.11
-
-**项目背景**：承接三维重建项目全流程管理需求，针对三维重建需要分步完成相应流程、流程内需上传下载以及流程占用等任务协调问题，开发一套完整的全流程智慧管理系统，为三维重建工作提供文件管理和流程协调支持。
-
-**技术栈**：Vue3 + TypeScript + Spring Boot 3.5.5 + PostgreSQL
-
-**项目成果**：
-- 独立完成前后端架构设计，实现**五步流程管理**（数据采集→抽帧收集→重建收集→高斯泼溅→模型打磨）
-- 设计**文件分层存储架构**，按流程步骤分文件夹存储（Videos、Frames、Rebuild、3dgs、plys）
-- 实现**任务协调机制**和**权限分级管理**，支持流程占用机制和异常申述处理
-- 集成**统一认证平台**，支持大文件上传（最大2GB），实现完整的任务生命周期管理
-
----
-
-### ROS全栈自主控制小车 | 2025.04
-
-**项目背景**：旨在实现通过中转服务器远程查看小车摄像头画面并控制小车行动，构建一套完整的ROS全栈自主控制解决方案，满足远程监控与操控小车的需求。
-
-**技术栈**：Flask + ROS + OpenCV + 地瓜机器人 + RDKx5开发板
-
-**项目成果**：
-- 实现基于中转服务器的远程小车监控与控制功能，打通从客户端网页到小车硬件的全链路通信与控制流程
-- 小车端运行在Ubuntu系统上，客户端通过Web页面实时查看小车摄像头画面并发送控制指令
-- 成功整合ROS系统与Web技术，实现前后端服务器代码开发和小车控制代码
-
----
-
-### 智慧监控系统 | 2025.09 - 2026.02
-
-**项目背景**：厦门工学院人工智能创作坊需配套一套适配其场景特性的智慧监控系统，解决画面变化检测与时间轴存储需求。
-
-**技术栈**：Python + OpenCV + imagehash
-
-**项目成果**：
-- 实现画面变化检测与时间轴存储，通过帧哈希计算实现画面变化检测
-- 支持多线程并行监控3台海康威视网络摄像机，按时间轴路径存储
-- 实现磁盘空间自动管理（图像自动清理）、断连自动重连、非阻塞启动等容错机制
-- **开源代码**：GitHub/Gitee/GitCode
-
----
-
-### IP监控系统 | 2025.12
-
-**项目背景**：针对厦门工学院人工智能创作坊网络环境手动配置IP地址导致的IP冲突问题，独立开发IP监控系统，实现数据驱动的IP分配策略。
-
-**技术栈**：Flask + Python threading + HTML/CSS/JavaScript
-
-**项目成果**：
-- 实现自动网络扫描、IP统计可视化、交互式筛选等功能
-- 通过多线程并发ping提升扫描效率，使用热力图可视化展示IP使用频率
-- 帮助管理员了解IP使用频率，优先选择使用频率低的IP分配给新设备，避免IP冲突
-- **开源代码**：GitHub/Gitee/GitCode
-
----
-
-### mdconvert Python库 | 2026.03
-
-**项目背景**：为解决Markdown文档格式转换需求，开发轻量级Python库，支持HTML、PDF、DOCX等多种格式转换，提供简单易用的API接口。
-
-**技术栈**：Python + Markdown解析 + HTML/PDF/DOCX生成
-
-**项目成果**：
-- **独立开发Python库**：实现Markdown到HTML/PDF/DOCX的完整转换流程，支持自定义CSS样式
-- **开源贡献**：发布到PyPI平台（包名：mdconvert），提供完整文档和示例代码
-- **技术文档撰写**：撰写详细使用教程，涵盖安装、API使用、自定义样式等完整流程
-- **实用工具价值**：简化文档转换流程，支持批量处理和样式定制，提升文档处理效率
-- **开源代码**：GitHub/Gitee/GitCode
-
----
-
-### 鼠标和键盘模拟项目 | 2026.03
-
-**项目背景**：基于USB Gadget HID协议开发鼠标和键盘模拟项目，适用于RK3588等Linux开发板，提供RESTful API控制鼠标移动和键盘输入，解决远程设备控制需求。
-
-**技术栈**：FastAPI + Python + USB Gadget HID + Linux内核配置
-
-**项目成果**：
-- **USB HID配置文档**：编写完整的USB HID设备配置文档，涵盖内核检查、OTG模式切换、设备绑定等
-- **鼠标API开发**：实现基于FastAPI的鼠标控制API，支持x、y坐标控制
-- **代码质量优化**：重构代码结构，添加类型注释，创建统一响应类
-- **项目成果**：提供完整的配置文档和API服务
-
----
-
-## 获奖与荣誉
-
-### 认证证书
-- **2024.05** | **工业和信息化人才岗位能力认证证书** | 认证方向：工业互联网平台开发工程师 | 颁发机构：工业和信息化部
-
-### 项目立项
-- **2025.09** | **国家级大学生创新创业训练计划项目**立项 | 项目编号：202513115006 | 项目名称：EduBot——教育新形态的缔造者
-
-### 专利成果
-- **2025.05** | **发明专利**（第三发明人）：基于多模态大模型的课堂行为检测方法
-  - 申请号：CN202510645941.9 | 公开号：CN120183048A
-  - 技术领域：多模态大模型、目标检测、人脸识别、行为分析
-  - 个人贡献：参与核心算法设计、技术方案与实验验证
-
-- **2025.09** | **发明专利**（第二发明人）：一种基于课堂监控的学生行为检测系统及方法
-  - 申请号：CN202511244232.6 | 公开号：CN121095547A
-  - 技术领域：计算机视觉、行为检测、深度学习
-  - 个人贡献：参与系统整体设计、算法开发与实现
-
-### 技术社区成就
-- **2025.11** | **掘金优质作者榜第2名**（2025年第11期）
-  - 123篇优质文章 | 111获收藏
-  - 热度：438，仅次于京东云官方账号
-
----
-
-## 技术亮点
-
-1. **全栈开发能力**：独立完成前后端架构设计与开发，熟练使用Vue3、Spring Boot、Flask等技术栈，完成多个全栈项目，涵盖企业级管理系统、AI应用系统等多个领域
-
-2. **AI模型开发**：设计并训练专用深度学习检测模型，使用PyTorch、YOLO等框架，模型精度优于泛用模型，成功应用于课堂行为检测、农业监测等实际场景，获得国家级大创立项和发明专利
-
-3. **性能优化能力**：通过Redis缓存、按需加载等技术优化系统性能，实现数据看板实时更新延迟**<1秒**
-
-4. **项目落地能力**：独立完成从需求分析、架构设计到部署上线的全流程，多个项目成功上线运行，包括学生管理系统、中科院图像拼接系统、农科院监测系统等
-
-5. **问题解决能力**：设计并实现JWT认证+IP白名单双重安全机制，有效防止刷签到现象；解决高并发场景下的性能瓶颈，通过并行加载策略优化数据加载效率；独立解决图像拼接精度问题，行距误差控制在5像素内
-
-6. **UI/UX优化能力**：实现企业级UI组件优化（日期选择器中文化、大屏标准适配），采用卡片式布局、渐变背景、暗色模式等现代化设计，提升用户体验和界面美观度，遵循企业级开发最佳实践
-
----
-
-## 自我评价
-
-具备**独立完成项目**的能力，能够从需求分析、架构设计到开发部署全流程独立完成，具备良好的**问题解决能力**和**技术优化能力**。**持续学习新技术**，能够快速掌握并应用到实际项目中，在项目中创新性地应用新技术，获得**国家级大创立项**和**发明专利**等成果。具备良好的**团队协作能力**和**沟通能力**，能够与团队成员高效配合完成项目目标，具备较强的**抗压能力**和**适应能力**，能够在快节奏的工作环境中保持高效产出。
-
----
+<table>
+  <tr>
+    <td>
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
+        <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg" >
+      </picture>
+    </td>
+    <td>
+        <a href="https://versakit.github.io/Versakit/">
+          <img src="./assets/Versakit.jpg" alt="Versakit" width="400px">
+        </a>
+    </td>
+  </tr>
+</table>
+
+## <img src="./assets/cool.gif" alt="Profile Image" style="width:20px;height:20px"> Hi I am StriveToLearnCode 👋
+
+Here are some ideas to get you started:
+
+🔭 I’m currently working on web front-end development.  
+🤔 I’m looking for help with finding a suitable job.  
+💬 Ask me about anything.
+
+📫 How to reach me:
+
+- 📧 Email: [xinyahuang@88.com](mailto:xinyahuang@88.com)
+- 📱 WeChat: hxy1747274890
+- ⚡ Fun fact: I love coding challenges!
+
+<!--
+**StriveToLearnCode/StriveToLearnCode** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
