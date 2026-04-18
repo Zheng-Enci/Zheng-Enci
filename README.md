@@ -21,7 +21,7 @@
       </picture>
     </td>
     <td width="40%" align="center">
-      <img src="./assets/profile.gif" alt="Profile" width="160px">
+      <img src="./assets/profile.gif" alt="Profile" width="150px">
     </td>
   </tr>
 </table>
