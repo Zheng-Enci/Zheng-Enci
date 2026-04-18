@@ -2,9 +2,9 @@
   <tr>
     <td>
       <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
-        <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg" >
+        <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Zheng-Enci/Zheng-Enci/output/github-contribution-grid-snake-dark.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Zheng-Enci/Zheng-Enci/output/github-contribution-grid-snake.svg">
+        <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Zheng-Enci/Zheng-Enci/output/github-contribution-grid-snake.svg" >
       </picture>
     </td>
     <td>
@@ -15,22 +15,22 @@
   </tr>
 </table>
 
-## <img src="./assets/cool.gif" alt="Profile Image" style="width:20px;height:20px"> Hi I am StriveToLearnCode 👋
+## <img src="./assets/cool.gif" alt="Profile Image" style="width:20px;height:20px"> Hi I am 郑恩赐 👋
 
 Here are some ideas to get you started:
 
-🔭 I’m currently working on web front-end development.  
+🔭 I’m currently working on AI full-stack application development.  
 🤔 I’m looking for help with finding a suitable job.  
 💬 Ask me about anything.
 
 📫 How to reach me:
 
-- 📧 Email: [xinyahuang@88.com](mailto:xinyahuang@88.com)
-- 📱 WeChat: hxy1747274890
+- 📧 Email: [zheng_enci@qq.com](mailto:zheng_enci@qq.com)
+- 📱 GitHub: [https://github.com/Zheng-Enci](https://github.com/Zheng-Enci)
 - ⚡ Fun fact: I love coding challenges!
 
 <!--
-**StriveToLearnCode/StriveToLearnCode** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Zheng-Enci/Zheng-Enci** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
@@ -38,7 +38,7 @@ Here are some ideas to get you started:
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
 - 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
+- 💬 Ask me about anything ...
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
