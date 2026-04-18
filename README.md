@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/profile.gif" alt="Profile" width="200px" style="border-radius: 50%;">
+
 # 👋 Hi, I'm 郑恩赐 (Zheng Enci)
 
 **AI全栈应用开发 | 软件工程本科生 | 寻找实习/工作机会**
