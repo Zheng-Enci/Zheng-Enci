@@ -1,3 +1,5 @@
+<img src="./assets/profile.gif" alt="Profile" width="50px">
+
 ## Hi I am 郑恩赐 👋
 
 Here are some ideas to get you started:
