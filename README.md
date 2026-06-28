@@ -1,22 +1,3 @@
-# 👋 Hi, I'm 郑恩赐 (Zheng Enci)
-
-**AI全栈应用开发 | 软件工程本科生 | 寻找实习/工作机会**
-
-[![GitHub followers](https://img.shields.io/github/followers/Zheng-Enci?style=social)](https://github.com/Zheng-Enci)
-[![GitHub stars](https://img.shields.io/github/stars/Zheng-Enci?style=social)](https://github.com/Zheng-Enci)
-
-📌 **多平台同步**: [GitHub](https://github.com/Zheng-Enci) | [Gitee](https://gitee.com/zheng-enci050704) | [GitCode](https://gitcode.com/ZhengEnCi)
-
-## 🚀 关于我
-
-- 🎓 **厦门工学院** 人工智能学院 | 软件工程（AI方向）| 2023-2027
-- 💻 专注于 **AI全栈应用开发**，热爱将AI技术落地到实际项目中
-- 🌱 正在探索 **多模态大模型** 的应用与集成
-- 🔭 目前正在寻找合适的实习/工作机会
-- 🏆 **国家级大创立项（结题优秀）** | **2项发明专利** | **掘金优质作者榜第2名**
-
----
-
 ## 👋 Hey there, thanks for stopping by!
 
 I'm **郑恩赐 (Zheng Enci)**, an AI full-stack developer who loves building practical applications and turning AI technology into real-world solutions. Feel free to explore my projects and reach out if you'd like to connect or collaborate!
