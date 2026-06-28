@@ -11,6 +11,7 @@ I'm **郑恩赐 (Zheng Enci)**, an AI full-stack developer who loves building pr
 - 📝 掘金: [郑恩赐](https://juejin.cn/user/2883382090934252)
 - 📚 CSDN: [郑恩赐的博客](https://blog.csdn.net/2301_79239314)
 - 🔗 Gitee: [zheng-enci050704](https://gitee.com/zheng-enci050704)
+- 🚀 GitCode: [ZhengEnCi](https://gitcode.com/ZhengEnCi)
 
 ---
 
