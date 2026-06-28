@@ -1,26 +1,3 @@
-## 📊 GitHub 统计
-<div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Zheng-Enci&theme=radical&locale=zh_Hans&card_width=650" alt="连续贡献" height="185">
-</div>
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Zheng-Enci&show_icons=true&hide_rank=true&theme=radical&locale=cn&card_width=550" alt="GitHub 统计" height="185">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zheng-Enci&layout=compact&theme=radical&locale=cn&langs_count=20&card_width=400" alt="使用语言" height="185">
-</div>
-
-## 📈 年度贡献活动
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Zheng-Enci&theme=radical&custom_title=%E5%B9%B4%E5%BA%A6%E8%B4%A1%E7%8C%AE%E6%B4%BB%E5%8A%A8" alt="年度贡献活动" width="100%">
-</div>
-
----
-
-</div>
-
-<div align="center">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/Zheng-Enci/Zheng-Enci/master/dist/github-contribution-grid-snake.svg" width="100%">
-</div>
-
 ---
 
 # 👋 Hi, I'm 郑恩赐 (Zheng Enci)
