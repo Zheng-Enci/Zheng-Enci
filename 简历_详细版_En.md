@@ -6,7 +6,7 @@
 
 ## Contact Information
 
-- **Email**: zheng_enci@qq.com
+- **Email**: zheng_enci_work@foxmail.com
 - **GitHub**: https://github.com/Zheng-Enci
 - **Gitee**: https://gitee.com/zheng-enci050704
 - **GitCode**: https://gitcode.com/ZhengEnCi
@@ -21,6 +21,9 @@
 
 - **Major**: Software Engineering (AI Direction)
 - **Research Focus**: Full-stack AI application development, intelligent vision technology R&D, deep learning model design and optimization, multimodal large model application integration
+
+**Self-Study**: Stanford CS336: Language Modeling from Scratch (2026)
+- Systematically studied the full pipeline of building LLMs from scratch, covering Tokenization, model architecture design, pretraining & data engineering, Scaling Laws, RLHF alignment, inference optimization, and other core topics, gaining deep understanding of LLM fundamentals and engineering practices
 
 ---
 
@@ -75,6 +78,8 @@
 - **System deployment**: Successfully deployed and launched, supporting multi-user concurrent access, **stable operation in production environment**
 - **March 2026 feature expansion**: Added invitation code management system, data download functionality, verification code system refactoring, **further enhancing system security**
 - **April 2026 feature expansion**: Added attendance analysis page, sign-in trend chart optimization (rolling average line, trend line, legend, tooltip), dark mode adaptation, mobile optimization
+- **Contactless face recognition sign-in**: Added camera-based face recognition for contactless attendance, capturing faces via camera, computing feature vectors and comparing with registered user's face feature vectors to enable automatic sign-in by simply walking past; retained CAPTCHA-based sign-in method, providing two sign-in options for users to choose from
+- **File hosting feature**: Added student project file hosting functionality, allowing students to upload their projects and obtain online access URLs, solving the hassle of configuring domain names and deployment servers for student projects
 - **Project Link**: https://10257qh6684dd.vicp.fun/ | **Open Source Code**: GitHub/Gitee/GitCode (frontend open source)
 
 ---
@@ -104,7 +109,7 @@
 - Used LabelImg to build **Xiamen Institute of Technology Classroom Personnel Detection Dataset** (YOLO format), compared multiple YOLO model versions, selected YOLOv8n for training specialized model
 - Developed proprietary behavior binary classification model using PyTorch, innovatively implemented "YOLO person detection + proprietary model behavior judgment" detection logic, **model accuracy significantly better than generic models**, accurately identifying 4 target behavior types
 - Independently completed full-stack development including frontend, backend, and model management three parts, integrated large language models for PPTX to mind map conversion, lesson plan generation and other functions
-- Project received **National College Student Innovation and Entrepreneurship Training Program approval** (Project No.: 202513115006)
+- Project received **National College Student Innovation and Entrepreneurship Training Program** approval and has been **completed** (Project No.: 202513115006, **Completion Rating: Excellent**)
 - Applied for **invention patent** (Third Inventor): Classroom behavior detection method based on multimodal large models (CN202510645941.9)
 - **Open Source Code**: GitHub/Gitee/GitCode (frontend and backend open source)
 
@@ -213,8 +218,8 @@
 ### Certifications
 - **2024.05** | **Industrial and Information Technology Talent Competency Certification** | Certification Direction: Industrial Internet Platform Development Engineer | Issuing Authority: Ministry of Industry and Information Technology
 
-### Project Approval
-- **2025.09** | **National College Student Innovation and Entrepreneurship Training Program** Approval | Project No.: 202513115006 | Project Name: EduBot - Creator of New Educational Forms
+### Project Approval & Completion
+- **Approved 2025.09, Completed 2026** | **National College Student Innovation and Entrepreneurship Training Program** | Project No.: 202513115006 | Project Name: EduBot - Creator of New Educational Forms | **Completion Rating: Excellent**
 
 ### Patent Achievements
 - **2025.05** | **Invention Patent** (Third Inventor): Classroom behavior detection method based on multimodal large models
