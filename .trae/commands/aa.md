@@ -1,5 +1,18 @@
 ---
-name: "11"
-description: "11"
+name: "简历仓库核对"
+description: "遍历 GitCode 远程仓库，逐个核对最后提交时间与本地简历记录，据此完善 简历_详细版.md"
 ---
-你要阅读我的远程仓库 使用那两个mcp插件 看看有多少个仓库 然后列出这些仓库 然后一个一个仓库来 一次只能一个仓库 先看仓库时间与本项目本地的F:\BaiduSyncdisk\ZhengEnCi\Note\Resume\简历_详细版.md里面记录到时间是否一致 一致则说明项目无更新 可不管 如果F:\BaiduSyncdisk\ZhengEnCi\Note\Resume\简历_详细版.md 里面没有是这个项目 则要阅读 项目相关信息 提交日志 项目代码等 来帮我完善F:\BaiduSyncdisk\ZhengEnCi\Note\Resume\简历_详细版.md 记住 一次只能针对一个项目 然后F:\BaiduSyncdisk\ZhengEnCi\Note\Resume\简历_详细版.md
+
+使用 GitCode 的两个 MCP 插件读取我的远程仓库：
+
+1. 先统计共有多少个仓库，并列出仓库列表。
+2. 然后逐个仓库处理，**一次只处理一个仓库**。
+
+针对每个仓库：
+
+- 先取该仓库的最后提交时间，与本地 `F:\BaiduSyncdisk\ZhengEnCi\Note\Resume\简历_详细版.md` 中记录的该项目时间比对。
+- 若时间一致 → 说明项目无更新，跳过即可。
+- 若 `简历_详细版.md` 中**没有**该项目 → 阅读该项目的相关信息（项目简介、提交日志、项目代码等），据此帮我把该项目补全进 `简历_详细版.md`。
+
+注意：**一次只能针对一个项目**，处理完一个再处理下一个。
+目标文件：`F:\BaiduSyncdisk\ZhengEnCi\Note\Resume\简历_详细版.md`。
