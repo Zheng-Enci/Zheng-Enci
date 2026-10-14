@@ -62,6 +62,15 @@
 
 ---
 
+### Xiamen Hongchen Network Technology Co., Ltd. | Computer Vision Algorithm Engineer | 2026.07.15 - 2026.07.21
+
+- **Independently developed** SkeleStroke, a handwriting stroke vectorization pipeline that extracts stroke skeletons from grid-paper handwriting images, fits them into smooth Catmull-Rom curves, and outputs JSON vector paths, **enabling the robotic arm to simulate real human handwriting and solving the company's key challenge that the robotic arm could not reproduce handwriting**
+- **Implemented the complete image processing chain**: grayscale conversion → median blur → Otsu global threshold binarization → black-bordered square detection with grid reconstruction → cell cropping → edge cropping → denoising → Black Ratio filtering → Zhang-Suen skeletonization → stroke tracing → RDP simplification → Catmull-Rom curve fitting → collinear simplification
+- **Developed companion robotic arm writing script**: automatic COM port detection, pixel-to-millimeter stroke coordinate mapping, and G-code command sequence generation, enabling the output paths to directly drive robotic arm writing
+- **Pure classical algorithm implementation**: built entirely on OpenCV + scikit-image + NumPy + Pillow with no deep learning dependencies, lightweight and interpretable
+
+---
+
 ## Project Experience
 
 ### Student Management System | 2025.09 - 2026.04
@@ -210,6 +219,22 @@
 - **Mouse API Development**: Implemented FastAPI-based mouse control API, supporting x, y coordinate control
 - **Code Quality Optimization**: Refactored code structure, added type annotations, created unified response class
 - **Project Achievements**: Provided complete configuration documentation and API services
+
+---
+
+### SkeleStroke Handwriting Skeleton Vectorization System | 2026.07.15 - 2026.07.21
+
+**Project Background**: The company already had robotic arm hardware, but its original control system could only execute fixed trajectories and could not simulate real human handwriting. During the internship, I independently developed the SkeleStroke vectorization pipeline, converting strokes in grid-paper handwriting images into smooth vector paths, with a companion robotic arm writing script forming an end-to-end "handwriting simulation + robotic arm writing" loop and solving the company's key challenge.
+
+**Tech Stack**: Python + OpenCV + NumPy + scikit-image + Pillow
+
+**Project Achievements**:
+- **Independently completed the full pipeline design**: grayscale conversion → median blur denoising → Otsu global threshold binarization → black-bordered square detection (contour analysis + convexHull fallback) → grid reconstruction (row/column clustering, angle correction, outer boundary quadrilateral) → cell cropping → edge cropping → connected component denoising → Black Ratio filtering ([0.5%, 50%]) → skeletonization → edge-based stroke tracing → RDP simplification → centripetal Catmull-Rom curve fitting → ordered stroke tracing → collinear simplification
+- **Pure classical algorithm implementation with no deep learning dependencies**: direction-aware three-phase stroke tracing (endpoint-initiated / branch seeds / closed-loop pickup), diagonal gap filling to ensure connectivity, edge-based tracing with junction direction-continuity heuristic to avoid path breakage, RDP (ε=2.5) to remove redundant control points, lightweight and highly interpretable
+- **Output standardized JSON vector paths**: `{width, height, strokes: [[[x,y],...],...]}` structure, directly parseable into robotic arm end-effector trajectories
+- **Companion robotic arm reproduction script**: automatic COM port detection (.NET SerialPort API) + pixel-to-millimeter coordinate mapping + G-code command sequence generation (pen up/pen down/point-to-point movement), completing the end-to-end loop from image to robotic arm writing
+- **Multi-stage debugging visualization system**: step_1 through step_11 intermediate output directories + interactive gallery.html page for full-pipeline algorithm tuning and validation
+- **Collinear Simplification**: multi-pass iterative removal of collinear redundant points between three points, simplifying output paths and improving robotic arm reproduction efficiency
 
 ---
 

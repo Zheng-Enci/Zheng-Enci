@@ -2349,4 +2349,42 @@ graph TB
 - 文章质量和实用性获得社区认可，数据指标持续向好
 - 在Java、Python等技术领域的内容分享获得广泛关注
 
+## 2026-7-15 ~ 2026-7-21 （本科三年级）| 项目：SkeleStroke 笔迹骨架矢量化系统（厦门弘尘网络科技有限公司实习）
+
+### 项目背景
+公司已具备机械臂硬件，但原有控制系统只能执行固定轨迹，**无法模拟真人字迹书写**——这是公司面临的关键难题。实习期间开发基于计算机视觉的手写笔画矢量化 pipeline（SkeleStroke），将网格手写图像中的笔画转化为平滑矢量路径，输出 JSON 矢量路径供机械臂复现书写，实现「字迹模拟 + 机械臂书写」闭环，**解决了公司这一关键难题**。核心目标是笔迹模拟，提取的矢量骨架路径可供机械臂端直接解析为末端轨迹。项目全程 128 次 git commit，从初始化到收尾共 7 天（2026-07-15 至 2026-07-21）。
+
+### 项目目标
+①从网格手写图像中提取笔画 skeleton（骨架）；②拟合为平滑 Catmull-Rom 曲线；③输出标准 JSON 矢量路径，可直接解析为机械臂末端轨迹；④整个 pipeline 不依赖深度学习框架，采用经典图像处理算法实现，保证轻量与可解释性。
+
+### 我的角色
+计算机视觉算法工程师（独立完成 pipeline 设计、图像处理算法实现、JSON 输出、机械臂写入脚本与可视化调试体系）
+
+### 核心功能实现
+1. **网格检测与重建**：黑色边框正方形检测（contour analysis + 四边形拟合，convexHull fallback 修复断边）→ 网格重建（行/列聚类、水平/垂直边角度校正、外边界四边形、行列数计算），自动检测 grid cells，只处理有笔迹的单元格
+2. **预处理链路**：灰度转换 → 中值滤波（median blur, 3×3，替代早期 dilation 方案）→ Otsu 全局阈值二值化（早期版本用 Sauvola，7-16 重构为 Otsu）→ 单元格裁剪 → 边缘裁切（edge scanning 涂白）→ Gaussian blur + connected component 去噪 → Black Ratio Gate（black_ratio ∈ [0.5%, 50%]）过滤有内容单元格
+3. **笔画拟合（stroke_fitting）**：Zhang-Suen 骨架化（skimage skeletonize）→ edge-based stroke tracing + junction 方向连续性启发式选路 → endpoint 邻近路径合并 + junction spur 移除 → RDP 简化（ε=2.5）→ Centripetal Catmull-Rom 曲线拟合（α=0.5, n=35）平滑插值，输出可视化 PNG
+4. **有序笔画追踪（extract_stroke_traces）**：对角缺口填充（diagonal gap filling，随机补缺口保证 4-neighbor 连通）→ 自定义 thinning（3-邻域连续剥蚀）→ 4-neighbor adjacency + 端点检测 → 方向感知三阶段追踪（Phase 1 端点出发 / Phase 2 分叉点 seed / Phase 3 捡漏闭合环），输出 `{width, height, strokes: [[[x,y],...],...]}` JSON
+5. **Collinear Simplification**：multi-pass 迭代删除三点共线冗余点，简化输出路径，保存到 step_11_simplified/
+6. **机械臂写入脚本（arm_strokes_writer.py）**：重启 JxbService（管理员 PowerShell）→ COM 口自动检测（.NET SerialPort API，失败回退扫描 COM1~COM16）→ 连接机械臂（遍历串口取有效 HCO）→ 加载笔画 JSON → 像素→毫米坐标映射（图像坐标系旋转映射到机械臂坐标系）→ 构建 G-code 指令序列（Z0 抬笔 → 定位 → Z6 落笔 → 逐点移动 → Z0 抬笔）→ 发送并校验返回
+7. **调试可视化体系**：输出 step_1_grayscale → step_1b_dilation → step_2_binary → step_2b_dilated → step_3_binary_debug → step_5_all_squares → step_5a_edge_cropped → step_5b_denoised → step_6_filtered_squares → step_9_stroke_fitting → step_9b_gap_filled → step_9c_thinned → step_9d_endpoints → step_9e_traces → step_11_simplified 多阶段中间结果目录，提供 gallery.html 交互式展示页面，覆盖全流程各步骤可视化
+
+### 技术栈/工具
+- **语言**：Python 3.13
+- **图像处理**：OpenCV（opencv-python 5.0.0，image I/O、形态学操作、contour analysis、可视化绘图）、NumPy（矩阵运算、坐标变换）
+- **二值化/骨架化**：scikit-image（threshold_sauvola、skeletonize）
+- **图像 IO**：Pillow（笔画追踪阶段像素级操作）
+- **算法**：Zhang-Suen thinning、Ramer-Douglas-Peucker、Centripetal Catmull-Rom、Flood Fill（DFS）、Otsu 全局阈值、edge-based stroke tracing、对角缺口填充
+- **无深度学习依赖**，轻量级、可解释性强
+
+### 项目成果
+1. 完整实现从网格手写图像到平滑矢量路径的端到端 pipeline，输出 `{width, height, strokes}` JSON 路径，可直接解析为机械臂末端轨迹
+2. 网格检测通过 convexHull fallback + 角度校正提高断边四边形检出率；笔画追踪通过方向感知三阶段 + junction 方向连续性启发式避免路径断裂
+3. 开发机械臂写入脚本，完成从图像到机械臂书写的端到端闭环（COM 口自动检测 + 像素→毫米映射 + G-code 指令序列）
+4. 构建多阶段调试可视化体系（gallery.html），支持全流程算法调参与效果验证
+5. 通过 Collinear Simplification 删除三点共线冗余点，简化输出路径，提升机械臂复现效率
+
+### 地点
+厦门弘尘网络科技有限公司
+
 
